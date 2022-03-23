@@ -1,3 +1,52 @@
 body {
   background: papayawhip;
 }
+* {
+  border: 1px solid teal;
+}
+
+div {
+  display: flex;
+  flex-flow: row wrap;
+  text-align: center;
+
+}
+.a {
+  width: 100%;
+  height: 20vh;
+}
+.b {
+  width: 100%;
+  height: 40vh;
+}
+.c, .d, .e {
+  width: 32%;
+  justify-content: space-between;
+  height: 20vh;
+}
+.f {
+  width: 100%;
+  height: 19vh;
+}
+
+@media (min-width: 600px) {
+  .a {
+    height: 32vh;
+    order: 1;
+  }
+  .b {
+    width: 75%;
+    order: 2;
+    height: 32vh;
+  }
+  .c, .d, .e {
+    width: 25%;
+    height: 32vh;
+    order: 4;
+  }
+  .f {
+    width: 24%;
+    height: 60vh;
+    order: 3;
+  }
+}
