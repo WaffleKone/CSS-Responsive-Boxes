@@ -1,3 +1,40 @@
 body {
   background: peachpuff;
 }
+* {
+  border: 1px solid teal;
+}
+div.container {
+  display: flex;
+  flex-flow: row wrap;
+  
+}
+.a {
+  width: 100%;
+  height: 20vh;
+}
+.b, .c, .d, .e, .f, .g {
+  width: 33%;
+  height: 20vh;
+}
+.h {
+  width: 100%;
+  height: 60vh;
+
+}
+
+@media (min-width: 600px) {
+  div.container { 
+    flex-flow: row wrap;
+  }
+  .a {
+    height: 33vh;
+  }
+  .b, .c, .d, .e, .f, .g {
+    height: 33vh;
+    width: 25%;
+  }
+  .h {
+    width: 24%;
+  }
+}
