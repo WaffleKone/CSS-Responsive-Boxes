@@ -1,3 +1,40 @@
 body {
   background: blanchedalmond;
 }
+* {
+  border: 1px solid teal;
+}
+div {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  margin: 0.1rem;
+  text-align: center;
+}
+.a {
+  height: 10vh;
+  
+}
+.b {
+  height: 80vh;
+}
+.c {
+  height: 10vh;
+}
+
+@media (min-width: 600px) {
+  .a {
+    height: 24vh;
+  }
+  div {
+    flex-flow: row wrap;
+  }
+  .b {
+    width: 74%;
+    height: 74vh;
+  }
+  .c {
+    width: 24%;
+    height: 74vh;
+  }
+}
